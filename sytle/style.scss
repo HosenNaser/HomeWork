@@ -1,0 +1,92 @@
+$hight: 400px;
+$width: 400px;
+$BgColor: rgb(219, 205, 164);
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body{
+  background-color: antiquewhite;
+}
+
+.Header {
+  background-color: rgb(226, 152, 13);
+  padding: 5px;
+  text-align: center;
+  animation: HeaderAnimation 5s infinite;
+}
+
+@keyframes HeaderAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.Footer {
+  background-color: rgb(168, 156, 117);
+  padding: 5px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.Mdiv {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.IMGS {
+  max-width: 100%;
+  height: 200px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  background-color: $BgColor;
+  height: 350px;
+  margin: 5px;
+  border-radius: 30px;
+}
+.Card:hover {
+  animation: CardAnimation 3s;
+}
+
+@keyframes CardAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.CardContent {
+  flex-grow: 1;
+  padding: 10px;
+  color: rgb(32, 58, 56);
+}
+
+input {
+  border-radius: 15px;
+  background-color: rgb(240, 234, 210);
+  color: rgb(148, 48, 143);
+  padding: 10px;
+  margin: 10px;
+}
+
+input:active {
+  transform: scale(0.9);
+}

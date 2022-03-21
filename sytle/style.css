@@ -1,0 +1,137 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+.Header {
+  background-color: #e2980d;
+  padding: 5px;
+  text-align: center;
+  -webkit-animation: HeaderAnimation 5s infinite;
+          animation: HeaderAnimation 5s infinite;
+}
+
+@-webkit-keyframes HeaderAnimation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes HeaderAnimation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.Footer {
+  background-color: #a89c75;
+  padding: 5px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.Mdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.IMGS {
+  max-width: 100%;
+  height: 200px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.Card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #dbcda4;
+  height: 350px;
+  margin: 5px;
+  border-radius: 30px;
+}
+
+.Card:hover {
+  -webkit-animation: CardAnimation 3s;
+          animation: CardAnimation 3s;
+}
+
+@-webkit-keyframes CardAnimation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes CardAnimation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.CardContent {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 10px;
+  color: #203a38;
+}
+
+input {
+  border-radius: 15px;
+  background-color: #f0ead2;
+  color: #94308f;
+  padding: 10px;
+  margin: 10px;
+}
+
+input:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+/*# sourceMappingURL=style.css.map */
